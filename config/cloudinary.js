@@ -14,4 +14,4 @@ exports.cloudinaryConnect = () => {
     }
 };
 
-module.exports = cloudinary;
+// module.exports = cloudinary;

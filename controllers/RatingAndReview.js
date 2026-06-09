@@ -1,7 +1,8 @@
 const RatingAndReview = require("../models/RatingAndReview");
 const Course = require("../models/Course");
+const mongoose = require("mongoose");
 
-const createRating = async (req,res) =>{
+exports.createRating = async (req,res) =>{
     try{
         // get userid
         const userId = req.body;

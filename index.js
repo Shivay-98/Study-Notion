@@ -8,9 +8,9 @@ const profileRoutes = require("./routes/Profile");
 
 const dataBase = require("./config/database");
 const cookieParser = require("cookie-parser");
-const {cloudinaryConnect} = require("./config/cloudinary")
+const { cloudinaryConnect } = require("./config/cloudinary")
 const cors = require("cors");
-const fileUpload = requier("express-fileupload");
+const fileUpload = require("express-fileupload");
 const dotenv = require("dotenv");
 
 dotenv.config();

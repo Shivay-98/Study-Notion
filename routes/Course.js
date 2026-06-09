@@ -29,7 +29,7 @@ const {
   createSubSection,
   updateSubSection,
   deleteSubSection,
-} = require("../controllers/SubSection");
+} = require("../controllers/Subsection");
 
 // Rating & Review Controllers
 const {
@@ -78,6 +78,6 @@ router.get("/getReviews", getAllRating);
 
 // ================= COURSE PROGRESS ROUTES =================
 
-router.post("/updateCourseProgress", auth, updateCourseProgress);
+// router.post("/updateCourseProgress", auth, updateCourseProgress);
 
 module.exports = router;
