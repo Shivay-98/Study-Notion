@@ -32,9 +32,13 @@ const courseSchema = new Schema({
     thumbnail:{
         type: String,
     },
-    tag: {
+    tag:{
+        type:String,
+        required:true,
+    },
+    category: {
         type: Schema.Types.ObjectId,
-        ref: "Tag"
+        ref: "Category"
     },
     studentsEnrolled: [{
         type : Schema.Types.ObjectId,
@@ -43,4 +47,6 @@ const courseSchema = new Schema({
     }]
 });
 
-module.exports = mongoose.model("Course",courseSchema);
+module.exports =
+  mongoose.models.Course ||
+  mongoose.model("Course", courseSchema);
